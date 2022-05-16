@@ -1,0 +1,25 @@
+{
+  "TESTS": [
+    {
+      "testCaseName": "ECMP",
+      "src-dst-pairs": [
+        {
+          "src": "h0p0l0",
+          "dest": "h1p0l1",
+          "pattern": "one-to-one",
+          "flows": [
+              {
+                "flow_type": "tcp",
+                "flow-volume": "128K",
+                "src-window-size": "32M",
+                "src-data-rate": "100K",
+                "pkt-size":  "1400",
+                "is-interactive" : "true"
+              }
+          ]
+        }
+      ]
+    }
+
+  ]
+}

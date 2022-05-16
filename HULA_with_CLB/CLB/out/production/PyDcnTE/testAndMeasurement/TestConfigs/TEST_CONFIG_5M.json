@@ -1,0 +1,88 @@
+{
+  "TESTS": [
+    {
+      "testCaseName": "ECMP",
+      "src-dst-pairs": [
+        {
+          "src": "h0p0l0",
+          "dest": "h1p1l1",
+          "pattern": "one-to-one",
+          "flows": [
+            {
+              "flow_type": "tcp",
+              "flow-volume": "5M",
+              "src-window-size": "32M",
+              "src-data-rate": "4M",
+              "pkt-size":  "1400",
+              "is-interactive" : "true"
+            },
+            {
+              "flow_type": "tcp",
+              "flow-volume": "5M",
+              "src-window-size": "32M",
+              "src-data-rate": "4M",
+              "pkt-size":  "1400",
+              "is-interactive" : "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "testCaseName": "ECMP1",
+      "src-dst-pairs": [
+        {
+          "src": "h0p0l0",
+          "dest": "h1p1l1",
+          "pattern": "one-to-one",
+          "flows": [
+            {
+              "flow_type": "tcp",
+              "flow-volume": "5M",
+              "src-window-size": "32M",
+              "src-data-rate": "4M",
+              "pkt-size":  "1400",
+              "is-interactive" : "true"
+            },
+            {
+              "flow_type": "tcp",
+              "flow-volume": "5M",
+              "src-window-size": "32M",
+              "src-data-rate": "4M",
+              "pkt-size":  "1400",
+              "is-interactive" : "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "testCaseName": "ECMP2",
+      "src-dst-pairs": [
+        {
+          "src": "*",
+          "dest": "*",
+          "pattern": "all-hosts",
+          "flows": [
+            {
+              "flow_type": "tcp",
+              "flow-volume": "5M",
+              "src-window-size": "32M",
+              "src-data-rate": "4M",
+              "pkt-size":  "1400",
+              "is-interactive" : "true"
+            },
+            {
+              "flow_type": "tcp",
+              "flow-volume": "5M",
+              "src-window-size": "32M",
+              "src-data-rate": "4M",
+              "pkt-size":  "1400",
+              "is-interactive" : "true"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

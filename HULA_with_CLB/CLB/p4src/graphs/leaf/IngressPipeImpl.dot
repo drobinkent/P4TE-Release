@@ -1,0 +1,110 @@
+digraph IngressPipeImpl {
+subgraph cluster {
+graph [
+label="", labeljust=r, style=bold];
+0[label=__START__, margin="", shape=rectangle, style=solid];
+1[label=__EXIT__, margin="", shape=rectangle, style=solid];
+2[label="local_metadata.flag_hdr.do_l3_l2 = 1;
+local_metadata.flag_hdr.downstream_routing_table_hit = 0;", margin="", shape=rectangle, style=solid];
+3[label="hdr.packet_out.isValid();", margin="", shape=rectangle, style=solid];
+4[label="standard_metadata.egress_spec = hdr.packet_out.egress_port;
+...
+log_msg(\"LB: found a control packet\");", margin="", shape=rectangle, style=solid];
+5[label="hdr.packet_out.clb_flags[7:7] == 1;", margin="", shape=rectangle, style=solid];
+6[label="load_counter_value_0/load_counter_value = 0;
+...
+mark_to_drop(standard_metadata);", margin="", shape=rectangle, style=solid];
+7[label="hdr.packet_out.clb_flags[6:6] == 1;", margin="", shape=rectangle, style=solid];
+8[label="stored_bitmask.write(0, hdr.packet_out.bitmask[15:0]);
+...
+log_msg<list<bit<32>, bit<16>, bit<32>>>(\"LB: Control Message for path control:: linkID--{},  bitmask--{} level_to_link_id_store_index--{}\", {hdr.packet_out.link_id, hdr.packet_out.bitmask[15:0], hdr.packet_out.level_to_link_id_store_index});", margin="", shape=rectangle, style=solid];
+9[label="log_msg<list<bit<8>>>(\"LB: The CLB flag is unsupported --{}\", {hdr.packet_out.clb_flags});
+log_msg<list<bit<32>, bit<16>, bit<32>>>(\"LB: Control Message for path control:: linkID--{},  bitmask--{} level_to_link_id_store_index--{}\", {hdr.packet_out.link_id, hdr.packet_out.bitmask[15:0], hdr.packet_out.level_to_link_id_store_index});", margin="", shape=rectangle, style=solid];
+10[label="hdr.packet_in.isValid() && standard_metadata.instance_type == 4;", margin="", shape=rectangle, style=solid];
+11[label="local_metadata.flag_hdr.do_l3_l2 = 0;
+mark_to_drop(standard_metadata);", margin="", shape=rectangle, style=solid];
+12[label="IngressPipeImpl.debug_std_meta_ingress_start.dbg_table", margin="", shape=ellipse, style=solid];
+13[label="hdr.icmpv6.type == 135 && hdr.icmpv6.type == 135;", margin="", shape=rectangle, style=solid];
+14[label="ndp_processing_control_block_ndp_reply_table/ndp_reply_table.apply().hit;", margin="", shape=rectangle, style=solid];
+15[label="local_metadata.flag_hdr.do_l3_l2 = 0;
+local_metadata.flag_hdr.is_pkt_toward_host = 1;", margin="", shape=rectangle, style=solid];
+16[label="local_metadata.flag_hdr.do_l3_l2 = 1;", margin="", shape=rectangle, style=solid];
+17[label="local_metadata.flag_hdr.do_l3_l2;", margin="", shape=rectangle, style=solid];
+18[label="l2_ternary_processing_control_block_l2_ternary_table/l2_ternary_table.apply().hit;", margin="", shape=rectangle, style=solid];
+19[label="my_station_processing_control_block_my_station_table/my_station_table.apply().hit;", margin="", shape=rectangle, style=solid];
+20[label="local_metadata.flag_hdr.my_station_table_hit = 1;", margin="", shape=rectangle, style=solid];
+21[label="local_metadata.flag_hdr.my_station_table_hit = 0;", margin="", shape=rectangle, style=solid];
+22[label="hdr.ipv6.isValid() && local_metadata.flag_hdr.my_station_table_hit;", margin="", shape=rectangle, style=solid];
+23[label="IngressPipeImpl.downstream_routing_control_clock.downstream_routing_table", margin="", shape=ellipse, style=solid];
+24[label="local_metadata.flag_hdr.downstream_routing_table_hit;", margin="", shape=rectangle, style=solid];
+25[label="local_metadata.flag_hdr.is_pkt_toward_host = 1;", margin="", shape=rectangle, style=solid];
+26[label="hdr.ipv6.hop_limit == 0;", margin="", shape=rectangle, style=solid];
+27[label="mark_to_drop(standard_metadata);", margin="", shape=rectangle, style=solid];
+28[label="local_metadata.flag_hdr.is_pkt_toward_host = 0;
+...
+log_msg<list<bit<16>>>(\"LB: packet bitmask is {}\", {local_metadata.packet_bitmask});", margin="", shape=rectangle, style=solid];
+29[label="IngressPipeImpl.dp_only_load_balancing_control_block.weight_group_finder_mat", margin="", shape=ellipse, style=solid];
+30[label="log_msg<list<bit<32>>>(\"LB: Link location index is {}\", {local_metadata.link_location_index});
+...
+log_msg<list<bit<32>>>(\"LB: selected link is {}\", {dp_only_load_balancing_control_block_temp/temp});", margin="", shape=rectangle, style=solid];
+31[label="!local_metadata.flag_hdr.found_multi_criteria_paths;", margin="", shape=rectangle, style=solid];
+32[label="upstream_ecmp_routing_control_block_lookup_flowlet_map_0/lookup_flowlet_map();", margin="", shape=rectangle, style=solid];
+33[label="local_metadata.flow_inter_packet_gap > 15000;", margin="", shape=rectangle, style=solid];
+34[label="upstream_ecmp_routing_control_block_update_flowlet_id_0/update_flowlet_id();", margin="", shape=rectangle, style=solid];
+35[label="IngressPipeImpl.upstream_ecmp_routing_control_block.upstream_routing_table", margin="", shape=ellipse, style=solid];
+36[label="log_msg(\"LB: Load balanced path not found. USing ECMP\");
+load_balancer_missed_counter.count(0);", margin="", shape=rectangle, style=solid];
+37[label="IngressPipeImpl.ingress_end_debug.dbg_table", margin="", shape=ellipse, style=solid];
+0 -> 2[label=""];
+2 -> 3[label=""];
+3 -> 4[label=TRUE];
+3 -> 10[label=FALSE];
+4 -> 5[label=""];
+5 -> 6[label=TRUE];
+5 -> 7[label=FALSE];
+6 -> 1[label=""];
+7 -> 8[label=TRUE];
+7 -> 9[label=FALSE];
+8 -> 12[label=""];
+9 -> 12[label=""];
+10 -> 11[label=TRUE];
+10 -> 12[label=FALSE];
+11 -> 12[label=""];
+12 -> 13[label=""];
+13 -> 14[label=TRUE];
+13 -> 17[label=FALSE];
+14 -> 15[label=TRUE];
+14 -> 16[label=FALSE];
+15 -> 1[label=""];
+16 -> 1[label=""];
+17 -> 18[label=TRUE];
+17 -> 37[label=FALSE];
+18 -> 1[label=TRUE];
+18 -> 19[label=FALSE];
+19 -> 20[label=TRUE];
+19 -> 21[label=FALSE];
+20 -> 22[label=""];
+21 -> 22[label=""];
+22 -> 23[label=TRUE];
+22 -> 37[label=FALSE];
+23 -> 24[label=""];
+24 -> 25[label=TRUE];
+24 -> 28[label=FALSE];
+25 -> 26[label=""];
+26 -> 27[label=TRUE];
+26 -> 37[label=FALSE];
+27 -> 37[label=""];
+28 -> 29[label=""];
+29 -> 30[label=""];
+30 -> 31[label=""];
+31 -> 32[label=TRUE];
+31 -> 37[label=FALSE];
+32 -> 33[label=""];
+33 -> 34[label=TRUE];
+33 -> 35[label=FALSE];
+34 -> 35[label=""];
+35 -> 36[label=""];
+36 -> 37[label=""];
+37 -> 1[label=""];
+}
+}

@@ -1,0 +1,64 @@
+digraph IngressPipeImpl {
+subgraph cluster {
+graph [
+label="", labeljust=r, style=bold];
+0[label=__START__, margin="", shape=rectangle, style=solid];
+1[label=__EXIT__, margin="", shape=rectangle, style=solid];
+2[label="hdr.p2p_feedback.isValid();", margin="", shape=rectangle, style=solid];
+3[label="standard_metadata.egress_spec = 255;
+local_metadata.flag_hdr.do_l3_l2 = 0;", margin="", shape=rectangle, style=solid];
+4[label="hdr.packet_out.isValid();", margin="", shape=rectangle, style=solid];
+5[label="standard_metadata.egress_spec = hdr.packet_out.egress_port;
+hdr.packet_out.setInvalid();", margin="", shape=rectangle, style=solid];
+6[label="hdr.packet_in.isValid() && standard_metadata.instance_type == 4;", margin="", shape=rectangle, style=solid];
+7[label="local_metadata.flag_hdr.do_l3_l2 = 0;
+...
+mark_to_drop(standard_metadata);", margin="", shape=rectangle, style=solid];
+8[label="init_pkt();", margin="", shape=rectangle, style=solid];
+9[label="IngressPipeImpl.ingress_rate_monitor_control_block.flow_type_based_ingress_stats_table", margin="", shape=ellipse, style=solid];
+10[label="local_metadata.ingress_rate_event_hdr.ingress_traffic_color > 0;", margin="", shape=rectangle, style=solid];
+11[label="local_metadata.flag_hdr.is_control_pkt_from_ing_queue_rate = 1;
+local_metadata.ingress_rate_event_hdr.event_src_type = 1;", margin="", shape=rectangle, style=solid];
+12[label="hdr.icmpv6.type == 135 && hdr.icmpv6.type == 135;", margin="", shape=rectangle, style=solid];
+13[label="IngressPipeImpl.ndp_processing_control_block.ndp_reply_table", margin="", shape=ellipse, style=solid];
+14[label="local_metadata.flag_hdr.do_l3_l2;", margin="", shape=rectangle, style=solid];
+15[label="l2_ternary_processing_control_block_l2_ternary_table/l2_ternary_table.apply().hit;", margin="", shape=rectangle, style=solid];
+16[label="hdr.ipv6.isValid();", margin="", shape=rectangle, style=solid];
+17[label="IngressPipeImpl.spine_downstream_routing_control_block.downstream_routing_table", margin="", shape=ellipse, style=solid];
+18[label="local_metadata.flag_hdr.downstream_routing_table_hit;", margin="", shape=rectangle, style=solid];
+19[label="hdr.ipv6.hop_limit == 0;", margin="", shape=rectangle, style=solid];
+20[label="drop();", margin="", shape=rectangle, style=solid];
+21[label="local_metadata.flag_hdr.found_multi_criteria_paths = 1;", margin="", shape=rectangle, style=solid];
+0 -> 2[label=""];
+2 -> 3[label=TRUE];
+2 -> 4[label=FALSE];
+3 -> 1[label=""];
+4 -> 5[label=TRUE];
+4 -> 6[label=FALSE];
+5 -> 1[label=""];
+6 -> 7[label=TRUE];
+6 -> 8[label=FALSE];
+7 -> 12[label=""];
+8 -> 9[label=""];
+9 -> 10[label=""];
+10 -> 11[label=TRUE];
+10 -> 12[label=FALSE];
+11 -> 12[label=""];
+12 -> 13[label=TRUE];
+12 -> 14[label=FALSE];
+13 -> 1[label=""];
+14 -> 15[label=TRUE];
+14 -> 1[label=FALSE];
+15 -> 1[label=TRUE];
+15 -> 16[label=FALSE];
+16 -> 17[label=TRUE];
+16 -> 1[label=FALSE];
+17 -> 18[label=""];
+18 -> 19[label=TRUE];
+18 -> 21[label=FALSE];
+19 -> 20[label=TRUE];
+19 -> 1[label=FALSE];
+20 -> 1[label=""];
+21 -> 1[label=""];
+}
+}

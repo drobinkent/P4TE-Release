@@ -1,0 +1,34 @@
+digraph ParserImpl{
+start [shape=rectangle,label="start
+(standard_metadata.ingress_port)"]
+parse_packet_out [shape=rectangle,label="parse_packet_out"]
+parse_ethernet [shape=rectangle,label="parse_ethernet
+(hdr.ethernet.ether_type)"]
+parse_ipv4 [shape=rectangle,label="parse_ipv4"]
+parse_ipv6 [shape=rectangle,label="parse_ipv6
+(hdr.ipv6.next_hdr)"]
+parse_tcp [shape=rectangle,label="parse_tcp"]
+parse_udp [shape=rectangle,label="parse_udp"]
+parse_icmpv6 [shape=rectangle,label="parse_icmpv6
+(hdr.icmpv6.type)"]
+parse_ndp [shape=rectangle,label="parse_ndp"]
+accept [shape=rectangle,label="accept"]
+reject [shape=rectangle,label="reject"]
+start -> parse_packet_out [label="9w255"]
+start -> parse_ethernet [label="default"]
+parse_packet_out -> parse_ethernet [label="always"]
+parse_ethernet -> parse_ipv6 [label="16w0x86dd"]
+parse_ethernet -> parse_ipv4 [label="16w0x800"]
+parse_ethernet -> accept [label="default"]
+parse_ipv4 -> accept [label="always"]
+parse_ipv6 -> parse_tcp [label="8w6"]
+parse_ipv6 -> parse_udp [label="8w17"]
+parse_ipv6 -> parse_icmpv6 [label="8w58"]
+parse_ipv6 -> accept [label="default"]
+parse_tcp -> accept [label="always"]
+parse_udp -> accept [label="always"]
+parse_icmpv6 -> parse_ndp [label="8w135"]
+parse_icmpv6 -> parse_ndp [label="8w136"]
+parse_icmpv6 -> accept [label="default"]
+parse_ndp -> accept [label="always"]
+}

@@ -1,0 +1,187 @@
+{
+	"start":	{
+		"connected":	[{
+				"socket":	6,
+				"local_host":	"2001:1:1:1::2:2",
+				"local_port":	42003,
+				"remote_host":	"2001:1:1:1::1:1",
+				"remote_port":	32003
+			}],
+		"version":	"iperf 3.7",
+		"system_info":	"Linux p4 5.4.0-73-generic #82-Ubuntu SMP Wed Apr 14 17:39:42 UTC 2021 x86_64",
+		"target_bitrate":	48000,
+		"sock_bufsize":	13312,
+		"sndbuf_actual":	26624,
+		"rcvbuf_actual":	26624,
+		"timestamp":	{
+			"time":	"Thu, 05 May 2022 07:11:01 GMT",
+			"timesecs":	1651734661
+		},
+		"accepted_connection":	{
+			"host":	"2001:1:1:1::1:1",
+			"port":	42132
+		},
+		"cookie":	"jywvcinwnozjagzbhrycd5di4mzvejn75ygn",
+		"tcp_mss":	1400,
+		"target_bitrate":	48000,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	1400,
+			"omit":	0,
+			"duration":	0,
+			"bytes":	26624,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	8
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	6,
+					"start":	0,
+					"end":	1.000212,
+					"seconds":	1.0002119541168213,
+					"bytes":	4200,
+					"bits_per_second":	33592.879850819736,
+					"omitted":	false,
+					"sender":	false
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.000212,
+				"seconds":	1.0002119541168213,
+				"bytes":	4200,
+				"bits_per_second":	33592.879850819736,
+				"omitted":	false,
+				"sender":	false
+			}
+		}, {
+			"streams":	[{
+					"socket":	6,
+					"start":	1.000212,
+					"end":	2.000251,
+					"seconds":	1.0000389814376831,
+					"bytes":	4188,
+					"bits_per_second":	33502.694016820969,
+					"omitted":	false,
+					"sender":	false
+				}],
+			"sum":	{
+				"start":	1.000212,
+				"end":	2.000251,
+				"seconds":	1.0000389814376831,
+				"bytes":	4188,
+				"bits_per_second":	33502.694016820969,
+				"omitted":	false,
+				"sender":	false
+			}
+		}, {
+			"streams":	[{
+					"socket":	6,
+					"start":	2.000251,
+					"end":	3.000565,
+					"seconds":	1.0003139972686768,
+					"bytes":	1388,
+					"bits_per_second":	11100.514468775898,
+					"omitted":	false,
+					"sender":	false
+				}],
+			"sum":	{
+				"start":	2.000251,
+				"end":	3.000565,
+				"seconds":	1.0003139972686768,
+				"bytes":	1388,
+				"bits_per_second":	11100.514468775898,
+				"omitted":	false,
+				"sender":	false
+			}
+		}, {
+			"streams":	[{
+					"socket":	6,
+					"start":	3.000565,
+					"end":	4.00054,
+					"seconds":	0.99997502565383911,
+					"bytes":	2776,
+					"bits_per_second":	22208.554644131415,
+					"omitted":	false,
+					"sender":	false
+				}],
+			"sum":	{
+				"start":	3.000565,
+				"end":	4.00054,
+				"seconds":	0.99997502565383911,
+				"bytes":	2776,
+				"bits_per_second":	22208.554644131415,
+				"omitted":	false,
+				"sender":	false
+			}
+		}, {
+			"streams":	[{
+					"socket":	6,
+					"start":	4.00054,
+					"end":	4.648575,
+					"seconds":	0.64803498983383179,
+					"bytes":	5552,
+					"bits_per_second":	68539.508972176161,
+					"omitted":	false,
+					"sender":	false
+				}],
+			"sum":	{
+				"start":	4.00054,
+				"end":	4.648575,
+				"seconds":	0.64803498983383179,
+				"bytes":	5552,
+				"bits_per_second":	68539.508972176161,
+				"omitted":	false,
+				"sender":	false
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	6,
+					"start":	0,
+					"end":	4.648575,
+					"seconds":	4.648575,
+					"bytes":	0,
+					"bits_per_second":	0,
+					"sender":	false
+				},
+				"receiver":	{
+					"socket":	6,
+					"start":	0,
+					"end":	4.648575,
+					"seconds":	4.648575,
+					"bytes":	18104,
+					"bits_per_second":	31156.21453886406,
+					"sender":	false
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	4.648575,
+			"seconds":	4.648575,
+			"bytes":	0,
+			"bits_per_second":	0,
+			"sender":	false
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	4.648575,
+			"seconds":	4.648575,
+			"bytes":	18104,
+			"bits_per_second":	31156.21453886406,
+			"sender":	false
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	0.0034153841838499852,
+			"host_user":	0.0034153841838499852,
+			"host_system":	0,
+			"remote_total":	0,
+			"remote_user":	0,
+			"remote_system":	0
+		},
+		"receiver_tcp_congestion":	"dctcp"
+	}
+}

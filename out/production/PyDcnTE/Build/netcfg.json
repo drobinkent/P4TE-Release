@@ -1,0 +1,1168 @@
+{
+    "devices": {
+         "device:ss0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:62000?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:dd:00:00:00:00",
+                 "switchType": "SuperSpine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0::00/80"
+                }
+           }
+,
+         "device:ss1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:62001?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:dd:00:00:00:01",
+                 "switchType": "SuperSpine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0::00/80"
+                }
+           }
+,
+         "device:ss2": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:62002?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:dd:00:00:00:02",
+                 "switchType": "SuperSpine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0::00/80"
+                }
+           }
+,
+         "device:ss3": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:62003?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:dd:00:00:00:03",
+                 "switchType": "SuperSpine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0::00/80"
+                }
+           }
+,
+         "device:p0s0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61000?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:00:00",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0000::00/96"
+                }
+           }
+,
+         "device:p0s1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61001?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:00:01",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0000::00/96"
+                }
+           }
+,
+         "device:p0l0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60000?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:00:00",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0000:0000:00/112"
+                }
+           }
+,
+         "device:p0l1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60001?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:00:01",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0000:0001:00/112"
+                }
+           }
+,
+         "device:p1s0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61004?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:01:00",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0001::00/96"
+                }
+           }
+,
+         "device:p1s1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61005?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:01:01",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0001::00/96"
+                }
+           }
+,
+         "device:p1l0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60004?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:01:00",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0001:0000:00/112"
+                }
+           }
+,
+         "device:p1l1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60005?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:01:01",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0001:0001:00/112"
+                }
+           }
+,
+         "device:p2s0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61008?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:02:00",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0002::00/96"
+                }
+           }
+,
+         "device:p2s1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61009?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:02:01",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0002::00/96"
+                }
+           }
+,
+         "device:p2l0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60008?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:02:00",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0002:0000:00/112"
+                }
+           }
+,
+         "device:p2l1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60009?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:02:01",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0002:0001:00/112"
+                }
+           }
+,
+         "device:p3s0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61012?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:03:00",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0003::00/96"
+                }
+           }
+,
+         "device:p3s1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:61013?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-spine"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:cc:00:00:03:01",
+                 "switchType": "Spine",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0003::00/96"
+                }
+           }
+,
+         "device:p3l0": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60012?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:03:00",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0003:0000:00/112"
+                }
+           }
+,
+         "device:p3l1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:60013?device_id=1",
+                "driver": "bmv2",
+                "pipeconf": "org.medianet.dcn-te-leaf"
+             },
+             "fabricDeviceConfig": {
+                 "myStationMac": "00:bb:00:00:03:01",
+                 "switchType": "Leaf",
+                 "switchHostSubnetPrefix": "2001:1:1:1:0:0003:0001:00/112"
+                }
+           }
+
+  }
+
+,
+    "ports": {
+      "device:ss0/1": {
+        "interfaces":  [
+          {
+             "name": "ss0-1",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss0/2": {
+        "interfaces":  [
+          {
+             "name": "ss0-2",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss0/3": {
+        "interfaces":  [
+          {
+             "name": "ss0-3",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss0/4": {
+        "interfaces":  [
+          {
+             "name": "ss0-4",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss1/1": {
+        "interfaces":  [
+          {
+             "name": "ss1-1",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss1/2": {
+        "interfaces":  [
+          {
+             "name": "ss1-2",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss1/3": {
+        "interfaces":  [
+          {
+             "name": "ss1-3",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss1/4": {
+        "interfaces":  [
+          {
+             "name": "ss1-4",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss2/1": {
+        "interfaces":  [
+          {
+             "name": "ss2-1",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss2/2": {
+        "interfaces":  [
+          {
+             "name": "ss2-2",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss2/3": {
+        "interfaces":  [
+          {
+             "name": "ss2-3",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss2/4": {
+        "interfaces":  [
+          {
+             "name": "ss2-4",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss3/1": {
+        "interfaces":  [
+          {
+             "name": "ss3-1",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss3/2": {
+        "interfaces":  [
+          {
+             "name": "ss3-2",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss3/3": {
+        "interfaces":  [
+          {
+             "name": "ss3-3",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:ss3/4": {
+        "interfaces":  [
+          {
+             "name": "ss3-4",
+             "ips": ["2001:1:1:1:0::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s0/1": {
+        "interfaces":  [
+          {
+             "name": "p0s0-1",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s0/2": {
+        "interfaces":  [
+          {
+             "name": "p0s0-2",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s0/3": {
+        "interfaces":  [
+          {
+             "name": "p0s0-3",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s0/4": {
+        "interfaces":  [
+          {
+             "name": "p0s0-4",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s1/1": {
+        "interfaces":  [
+          {
+             "name": "p0s1-1",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s1/2": {
+        "interfaces":  [
+          {
+             "name": "p0s1-2",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s1/3": {
+        "interfaces":  [
+          {
+             "name": "p0s1-3",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0s1/4": {
+        "interfaces":  [
+          {
+             "name": "p0s1-4",
+             "ips": ["2001:1:1:1:0:0000::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l0/1": {
+        "interfaces":  [
+          {
+             "name": "p0l0-1",
+             "ips": ["2001:1:1:1:0:0000:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l0/2": {
+        "interfaces":  [
+          {
+             "name": "p0l0-2",
+             "ips": ["2001:1:1:1:0:0000:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l0/3": {
+        "interfaces":  [
+          {
+             "name": "p0l0-3",
+             "ips": ["2001:1:1:1:0:0000:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l0/4": {
+        "interfaces":  [
+          {
+             "name": "p0l0-4",
+             "ips": ["2001:1:1:1:0:0000:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l1/1": {
+        "interfaces":  [
+          {
+             "name": "p0l1-1",
+             "ips": ["2001:1:1:1:0:0000:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l1/2": {
+        "interfaces":  [
+          {
+             "name": "p0l1-2",
+             "ips": ["2001:1:1:1:0:0000:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l1/3": {
+        "interfaces":  [
+          {
+             "name": "p0l1-3",
+             "ips": ["2001:1:1:1:0:0000:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p0l1/4": {
+        "interfaces":  [
+          {
+             "name": "p0l1-4",
+             "ips": ["2001:1:1:1:0:0000:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s0/1": {
+        "interfaces":  [
+          {
+             "name": "p1s0-1",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s0/2": {
+        "interfaces":  [
+          {
+             "name": "p1s0-2",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s0/3": {
+        "interfaces":  [
+          {
+             "name": "p1s0-3",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s0/4": {
+        "interfaces":  [
+          {
+             "name": "p1s0-4",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s1/1": {
+        "interfaces":  [
+          {
+             "name": "p1s1-1",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s1/2": {
+        "interfaces":  [
+          {
+             "name": "p1s1-2",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s1/3": {
+        "interfaces":  [
+          {
+             "name": "p1s1-3",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1s1/4": {
+        "interfaces":  [
+          {
+             "name": "p1s1-4",
+             "ips": ["2001:1:1:1:0:0001::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l0/1": {
+        "interfaces":  [
+          {
+             "name": "p1l0-1",
+             "ips": ["2001:1:1:1:0:0001:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l0/2": {
+        "interfaces":  [
+          {
+             "name": "p1l0-2",
+             "ips": ["2001:1:1:1:0:0001:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l0/3": {
+        "interfaces":  [
+          {
+             "name": "p1l0-3",
+             "ips": ["2001:1:1:1:0:0001:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l0/4": {
+        "interfaces":  [
+          {
+             "name": "p1l0-4",
+             "ips": ["2001:1:1:1:0:0001:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l1/1": {
+        "interfaces":  [
+          {
+             "name": "p1l1-1",
+             "ips": ["2001:1:1:1:0:0001:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l1/2": {
+        "interfaces":  [
+          {
+             "name": "p1l1-2",
+             "ips": ["2001:1:1:1:0:0001:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l1/3": {
+        "interfaces":  [
+          {
+             "name": "p1l1-3",
+             "ips": ["2001:1:1:1:0:0001:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p1l1/4": {
+        "interfaces":  [
+          {
+             "name": "p1l1-4",
+             "ips": ["2001:1:1:1:0:0001:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s0/1": {
+        "interfaces":  [
+          {
+             "name": "p2s0-1",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s0/2": {
+        "interfaces":  [
+          {
+             "name": "p2s0-2",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s0/3": {
+        "interfaces":  [
+          {
+             "name": "p2s0-3",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s0/4": {
+        "interfaces":  [
+          {
+             "name": "p2s0-4",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s1/1": {
+        "interfaces":  [
+          {
+             "name": "p2s1-1",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s1/2": {
+        "interfaces":  [
+          {
+             "name": "p2s1-2",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s1/3": {
+        "interfaces":  [
+          {
+             "name": "p2s1-3",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2s1/4": {
+        "interfaces":  [
+          {
+             "name": "p2s1-4",
+             "ips": ["2001:1:1:1:0:0002::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l0/1": {
+        "interfaces":  [
+          {
+             "name": "p2l0-1",
+             "ips": ["2001:1:1:1:0:0002:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l0/2": {
+        "interfaces":  [
+          {
+             "name": "p2l0-2",
+             "ips": ["2001:1:1:1:0:0002:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l0/3": {
+        "interfaces":  [
+          {
+             "name": "p2l0-3",
+             "ips": ["2001:1:1:1:0:0002:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l0/4": {
+        "interfaces":  [
+          {
+             "name": "p2l0-4",
+             "ips": ["2001:1:1:1:0:0002:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l1/1": {
+        "interfaces":  [
+          {
+             "name": "p2l1-1",
+             "ips": ["2001:1:1:1:0:0002:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l1/2": {
+        "interfaces":  [
+          {
+             "name": "p2l1-2",
+             "ips": ["2001:1:1:1:0:0002:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l1/3": {
+        "interfaces":  [
+          {
+             "name": "p2l1-3",
+             "ips": ["2001:1:1:1:0:0002:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p2l1/4": {
+        "interfaces":  [
+          {
+             "name": "p2l1-4",
+             "ips": ["2001:1:1:1:0:0002:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s0/1": {
+        "interfaces":  [
+          {
+             "name": "p3s0-1",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s0/2": {
+        "interfaces":  [
+          {
+             "name": "p3s0-2",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s0/3": {
+        "interfaces":  [
+          {
+             "name": "p3s0-3",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s0/4": {
+        "interfaces":  [
+          {
+             "name": "p3s0-4",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s1/1": {
+        "interfaces":  [
+          {
+             "name": "p3s1-1",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s1/2": {
+        "interfaces":  [
+          {
+             "name": "p3s1-2",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s1/3": {
+        "interfaces":  [
+          {
+             "name": "p3s1-3",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3s1/4": {
+        "interfaces":  [
+          {
+             "name": "p3s1-4",
+             "ips": ["2001:1:1:1:0:0003::ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l0/1": {
+        "interfaces":  [
+          {
+             "name": "p3l0-1",
+             "ips": ["2001:1:1:1:0:0003:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l0/2": {
+        "interfaces":  [
+          {
+             "name": "p3l0-2",
+             "ips": ["2001:1:1:1:0:0003:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l0/3": {
+        "interfaces":  [
+          {
+             "name": "p3l0-3",
+             "ips": ["2001:1:1:1:0:0003:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l0/4": {
+        "interfaces":  [
+          {
+             "name": "p3l0-4",
+             "ips": ["2001:1:1:1:0:0003:0000:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l1/1": {
+        "interfaces":  [
+          {
+             "name": "p3l1-1",
+             "ips": ["2001:1:1:1:0:0003:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l1/2": {
+        "interfaces":  [
+          {
+             "name": "p3l1-2",
+             "ips": ["2001:1:1:1:0:0003:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l1/3": {
+        "interfaces":  [
+          {
+             "name": "p3l1-3",
+             "ips": ["2001:1:1:1:0:0003:0001:ff/80"]
+          }
+        ]
+      }
+,
+      "device:p3l1/4": {
+        "interfaces":  [
+          {
+             "name": "p3l1-4",
+             "ips": ["2001:1:1:1:0:0003:0001:ff/80"]
+          }
+        ]
+      }
+
+  },
+
+    "hosts": {
+      "00:00:aa:00:00:00/None": {
+        "basic": {
+             "name": "h0p0l0",
+             "ips": ["2001:1:1:1:0:0000:0000:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:00:00:00",
+             "location": "p0l0/1"
+         }
+      }
+,
+      "00:00:aa:00:00:01/None": {
+        "basic": {
+             "name": "h1p0l0",
+             "ips": ["2001:1:1:1:0:0000:0000:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:00:00:01",
+             "location": "p0l0/2"
+         }
+      }
+,
+      "00:00:aa:00:01:00/None": {
+        "basic": {
+             "name": "h0p0l1",
+             "ips": ["2001:1:1:1:0:0000:0001:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:00:01:00",
+             "location": "p0l1/1"
+         }
+      }
+,
+      "00:00:aa:00:01:01/None": {
+        "basic": {
+             "name": "h1p0l1",
+             "ips": ["2001:1:1:1:0:0000:0001:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:00:01:01",
+             "location": "p0l1/2"
+         }
+      }
+,
+      "00:00:aa:01:00:00/None": {
+        "basic": {
+             "name": "h0p1l0",
+             "ips": ["2001:1:1:1:0:0001:0000:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:01:00:00",
+             "location": "p1l0/1"
+         }
+      }
+,
+      "00:00:aa:01:00:01/None": {
+        "basic": {
+             "name": "h1p1l0",
+             "ips": ["2001:1:1:1:0:0001:0000:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:01:00:01",
+             "location": "p1l0/2"
+         }
+      }
+,
+      "00:00:aa:01:01:00/None": {
+        "basic": {
+             "name": "h0p1l1",
+             "ips": ["2001:1:1:1:0:0001:0001:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:01:01:00",
+             "location": "p1l1/1"
+         }
+      }
+,
+      "00:00:aa:01:01:01/None": {
+        "basic": {
+             "name": "h1p1l1",
+             "ips": ["2001:1:1:1:0:0001:0001:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:01:01:01",
+             "location": "p1l1/2"
+         }
+      }
+,
+      "00:00:aa:02:00:00/None": {
+        "basic": {
+             "name": "h0p2l0",
+             "ips": ["2001:1:1:1:0:0002:0000:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:02:00:00",
+             "location": "p2l0/1"
+         }
+      }
+,
+      "00:00:aa:02:00:01/None": {
+        "basic": {
+             "name": "h1p2l0",
+             "ips": ["2001:1:1:1:0:0002:0000:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:02:00:01",
+             "location": "p2l0/2"
+         }
+      }
+,
+      "00:00:aa:02:01:00/None": {
+        "basic": {
+             "name": "h0p2l1",
+             "ips": ["2001:1:1:1:0:0002:0001:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:02:01:00",
+             "location": "p2l1/1"
+         }
+      }
+,
+      "00:00:aa:02:01:01/None": {
+        "basic": {
+             "name": "h1p2l1",
+             "ips": ["2001:1:1:1:0:0002:0001:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:02:01:01",
+             "location": "p2l1/2"
+         }
+      }
+,
+      "00:00:aa:03:00:00/None": {
+        "basic": {
+             "name": "h0p3l0",
+             "ips": ["2001:1:1:1:0:0003:0000:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:03:00:00",
+             "location": "p3l0/1"
+         }
+      }
+,
+      "00:00:aa:03:00:01/None": {
+        "basic": {
+             "name": "h1p3l0",
+             "ips": ["2001:1:1:1:0:0003:0000:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:03:00:01",
+             "location": "p3l0/2"
+         }
+      }
+,
+      "00:00:aa:03:01:00/None": {
+        "basic": {
+             "name": "h0p3l1",
+             "ips": ["2001:1:1:1:0:0003:0001:0000"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:03:01:00",
+             "location": "p3l1/1"
+         }
+      }
+,
+      "00:00:aa:03:01:01/None": {
+        "basic": {
+             "name": "h1p3l1",
+             "ips": ["2001:1:1:1:0:0003:0001:0001"]
+         },
+        "fabricHostConfig": {
+             "mac": "00:00:aa:03:01:01",
+             "location": "p3l1/2"
+         }
+      }
+
+  }
+
+}

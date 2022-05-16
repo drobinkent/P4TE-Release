@@ -1,0 +1,184 @@
+Topology  config path is  ./MininetSimulator/Build/Internalnetcfg.json
+Printing the map {'h0p0l0': Host(hostName='h0p0l0', basic=BasicElement(name='h0p0l0', ips=['2001:1:1:1:0:0000:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:00:00', location='p0l0/1')), 'h1p0l0': Host(hostName='h1p0l0', basic=BasicElement(name='h1p0l0', ips=['2001:1:1:1:0:0000:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:00:01', location='p0l0/2')), 'h0p0l1': Host(hostName='h0p0l1', basic=BasicElement(name='h0p0l1', ips=['2001:1:1:1:0:0000:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:01:00', location='p0l1/1')), 'h1p0l1': Host(hostName='h1p0l1', basic=BasicElement(name='h1p0l1', ips=['2001:1:1:1:0:0000:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:01:01', location='p0l1/2')), 'h0p1l0': Host(hostName='h0p1l0', basic=BasicElement(name='h0p1l0', ips=['2001:1:1:1:0:0001:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:00:00', location='p1l0/1')), 'h1p1l0': Host(hostName='h1p1l0', basic=BasicElement(name='h1p1l0', ips=['2001:1:1:1:0:0001:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:00:01', location='p1l0/2')), 'h0p1l1': Host(hostName='h0p1l1', basic=BasicElement(name='h0p1l1', ips=['2001:1:1:1:0:0001:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:01:00', location='p1l1/1')), 'h1p1l1': Host(hostName='h1p1l1', basic=BasicElement(name='h1p1l1', ips=['2001:1:1:1:0:0001:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:01:01', location='p1l1/2')), 'h0p2l0': Host(hostName='h0p2l0', basic=BasicElement(name='h0p2l0', ips=['2001:1:1:1:0:0002:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:00:00', location='p2l0/1')), 'h1p2l0': Host(hostName='h1p2l0', basic=BasicElement(name='h1p2l0', ips=['2001:1:1:1:0:0002:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:00:01', location='p2l0/2')), 'h0p2l1': Host(hostName='h0p2l1', basic=BasicElement(name='h0p2l1', ips=['2001:1:1:1:0:0002:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:01:00', location='p2l1/1')), 'h1p2l1': Host(hostName='h1p2l1', basic=BasicElement(name='h1p2l1', ips=['2001:1:1:1:0:0002:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:01:01', location='p2l1/2')), 'h0p3l0': Host(hostName='h0p3l0', basic=BasicElement(name='h0p3l0', ips=['2001:1:1:1:0:0003:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:00:00', location='p3l0/1')), 'h1p3l0': Host(hostName='h1p3l0', basic=BasicElement(name='h1p3l0', ips=['2001:1:1:1:0:0003:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:00:01', location='p3l0/2')), 'h0p3l1': Host(hostName='h0p3l1', basic=BasicElement(name='h0p3l1', ips=['2001:1:1:1:0:0003:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:01:00', location='p3l1/1')), 'h1p3l1': Host(hostName='h1p3l1', basic=BasicElement(name='h1p3l1', ips=['2001:1:1:1:0:0003:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:01:01', location='p3l1/2'))}
+Test case config path is  ./testAndMeasurement/TestConfigs/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json
+folderTobecreated is :/home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc
+folderTobecreated is :/home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker
+folderTobecreated is :/home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json
+folder creation completed
+Src: h0p0l0 peer host:h1p3l1
+Src: h1p0l0 peer host:h0p3l1
+Src: h0p0l1 peer host:h1p3l0
+Src: h1p0l1 peer host:h0p3l0
+Src: h0p1l0 peer host:h1p0l1
+Src: h1p1l0 peer host:h0p0l1
+Src: h0p1l1 peer host:h1p0l0
+Src: h1p1l1 peer host:h0p0l0
+Src: h0p2l0 peer host:h1p1l1
+Src: h1p2l0 peer host:h0p1l1
+Src: h0p2l1 peer host:h1p1l0
+Src: h1p2l1 peer host:h0p1l0
+Src: h0p3l0 peer host:h1p2l1
+Src: h1p3l0 peer host:h0p2l1
+Src: h0p3l1 peer host:h1p2l0
+Src: h1p3l1 peer host:h0p2l0
+Host(hostName='h0p0l0', basic=BasicElement(name='h0p0l0', ips=['2001:1:1:1:0:0000:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:00:00', location='p0l0/1'))
+SSh connecting to  2001:1:1:1:0:0000:0000:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p1l1-32001-h0p0l0-42001  &
+Finished executing server commands on h0p0l0
+Host(hostName='h1p0l0', basic=BasicElement(name='h1p0l0', ips=['2001:1:1:1:0:0000:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:00:01', location='p0l0/2'))
+SSh connecting to  2001:1:1:1:0:0000:0000:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p1l1-32001-h1p0l0-42001  &
+Finished executing server commands on h1p0l0
+Host(hostName='h0p0l1', basic=BasicElement(name='h0p0l1', ips=['2001:1:1:1:0:0000:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:01:00', location='p0l1/1'))
+SSh connecting to  2001:1:1:1:0:0000:0001:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p1l0-32001-h0p0l1-42001  &
+Finished executing server commands on h0p0l1
+Host(hostName='h1p0l1', basic=BasicElement(name='h1p0l1', ips=['2001:1:1:1:0:0000:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:01:01', location='p0l1/2'))
+SSh connecting to  2001:1:1:1:0:0000:0001:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p1l0-32001-h1p0l1-42001  &
+Finished executing server commands on h1p0l1
+Host(hostName='h0p1l0', basic=BasicElement(name='h0p1l0', ips=['2001:1:1:1:0:0001:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:00:00', location='p1l0/1'))
+SSh connecting to  2001:1:1:1:0:0001:0000:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p2l1-32001-h0p1l0-42001  &
+Finished executing server commands on h0p1l0
+Host(hostName='h1p1l0', basic=BasicElement(name='h1p1l0', ips=['2001:1:1:1:0:0001:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:00:01', location='p1l0/2'))
+SSh connecting to  2001:1:1:1:0:0001:0000:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p2l1-32001-h1p1l0-42001  &
+Finished executing server commands on h1p1l0
+Host(hostName='h0p1l1', basic=BasicElement(name='h0p1l1', ips=['2001:1:1:1:0:0001:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:01:00', location='p1l1/1'))
+SSh connecting to  2001:1:1:1:0:0001:0001:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p2l0-32001-h0p1l1-42001  &
+Finished executing server commands on h0p1l1
+Host(hostName='h1p1l1', basic=BasicElement(name='h1p1l1', ips=['2001:1:1:1:0:0001:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:01:01', location='p1l1/2'))
+SSh connecting to  2001:1:1:1:0:0001:0001:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p2l0-32001-h1p1l1-42001  &
+Finished executing server commands on h1p1l1
+Host(hostName='h0p2l0', basic=BasicElement(name='h0p2l0', ips=['2001:1:1:1:0:0002:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:00:00', location='p2l0/1'))
+SSh connecting to  2001:1:1:1:0:0002:0000:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p3l1-32001-h0p2l0-42001  &
+Finished executing server commands on h0p2l0
+Host(hostName='h1p2l0', basic=BasicElement(name='h1p2l0', ips=['2001:1:1:1:0:0002:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:00:01', location='p2l0/2'))
+SSh connecting to  2001:1:1:1:0:0002:0000:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p3l1-32001-h1p2l0-42001  &
+Finished executing server commands on h1p2l0
+Host(hostName='h0p2l1', basic=BasicElement(name='h0p2l1', ips=['2001:1:1:1:0:0002:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:01:00', location='p2l1/1'))
+SSh connecting to  2001:1:1:1:0:0002:0001:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p3l0-32001-h0p2l1-42001  &
+Finished executing server commands on h0p2l1
+Host(hostName='h1p2l1', basic=BasicElement(name='h1p2l1', ips=['2001:1:1:1:0:0002:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:01:01', location='p2l1/2'))
+SSh connecting to  2001:1:1:1:0:0002:0001:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p3l0-32001-h1p2l1-42001  &
+Finished executing server commands on h1p2l1
+Host(hostName='h0p3l0', basic=BasicElement(name='h0p3l0', ips=['2001:1:1:1:0:0003:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:00:00', location='p3l0/1'))
+SSh connecting to  2001:1:1:1:0:0003:0000:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p0l1-32001-h0p3l0-42001  &
+Finished executing server commands on h0p3l0
+Host(hostName='h1p3l0', basic=BasicElement(name='h1p3l0', ips=['2001:1:1:1:0:0003:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:00:01', location='p3l0/2'))
+SSh connecting to  2001:1:1:1:0:0003:0000:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p0l1-32001-h1p3l0-42001  &
+Finished executing server commands on h1p3l0
+Host(hostName='h0p3l1', basic=BasicElement(name='h0p3l1', ips=['2001:1:1:1:0:0003:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:01:00', location='p3l1/1'))
+SSh connecting to  2001:1:1:1:0:0003:0001:0000
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h1p0l0-32001-h0p3l1-42001  &
+Finished executing server commands on h0p3l1
+Host(hostName='h1p3l1', basic=BasicElement(name='h1p3l1', ips=['2001:1:1:1:0:0003:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:01:01', location='p3l1/2'))
+SSh connecting to  2001:1:1:1:0:0003:0001:0001
+Printing all server commands
+ iperf3 --server --port 42001 --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/server-logs/h0p0l0-32001-h1p3l1-42001  &
+Finished executing server commands on h1p3l1
+Timer file closed 
+Host(hostName='h0p0l0', basic=BasicElement(name='h0p0l0', ips=['2001:1:1:1:0:0000:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:00:00', location='p0l0/1'))
+SSh connecting to  2001:1:1:1:0:0000:0000:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0003:0001:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p0l0-32001-h1p3l1-42001 &"  1606723325 h0p0l0
+Finished executing client commands on h0p0l0
+Host(hostName='h1p0l0', basic=BasicElement(name='h1p0l0', ips=['2001:1:1:1:0:0000:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:00:01', location='p0l0/2'))
+SSh connecting to  2001:1:1:1:0:0000:0000:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0003:0001:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p0l0-32001-h0p3l1-42001 &"  1606723325 h1p0l0
+Finished executing client commands on h1p0l0
+Host(hostName='h0p0l1', basic=BasicElement(name='h0p0l1', ips=['2001:1:1:1:0:0000:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:01:00', location='p0l1/1'))
+SSh connecting to  2001:1:1:1:0:0000:0001:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0003:0000:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p0l1-32001-h1p3l0-42001 &"  1606723325 h0p0l1
+Finished executing client commands on h0p0l1
+Host(hostName='h1p0l1', basic=BasicElement(name='h1p0l1', ips=['2001:1:1:1:0:0000:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:00:01:01', location='p0l1/2'))
+SSh connecting to  2001:1:1:1:0:0000:0001:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0003:0000:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p0l1-32001-h0p3l0-42001 &"  1606723325 h1p0l1
+Finished executing client commands on h1p0l1
+Host(hostName='h0p1l0', basic=BasicElement(name='h0p1l0', ips=['2001:1:1:1:0:0001:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:00:00', location='p1l0/1'))
+SSh connecting to  2001:1:1:1:0:0001:0000:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0000:0001:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p1l0-32001-h1p0l1-42001 &"  1606723325 h0p1l0
+Finished executing client commands on h0p1l0
+Host(hostName='h1p1l0', basic=BasicElement(name='h1p1l0', ips=['2001:1:1:1:0:0001:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:00:01', location='p1l0/2'))
+SSh connecting to  2001:1:1:1:0:0001:0000:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0000:0001:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p1l0-32001-h0p0l1-42001 &"  1606723325 h1p1l0
+Finished executing client commands on h1p1l0
+Host(hostName='h0p1l1', basic=BasicElement(name='h0p1l1', ips=['2001:1:1:1:0:0001:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:01:00', location='p1l1/1'))
+SSh connecting to  2001:1:1:1:0:0001:0001:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0000:0000:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p1l1-32001-h1p0l0-42001 &"  1606723325 h0p1l1
+Finished executing client commands on h0p1l1
+Host(hostName='h1p1l1', basic=BasicElement(name='h1p1l1', ips=['2001:1:1:1:0:0001:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:01:01:01', location='p1l1/2'))
+SSh connecting to  2001:1:1:1:0:0001:0001:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0000:0000:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p1l1-32001-h0p0l0-42001 &"  1606723325 h1p1l1
+Finished executing client commands on h1p1l1
+Host(hostName='h0p2l0', basic=BasicElement(name='h0p2l0', ips=['2001:1:1:1:0:0002:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:00:00', location='p2l0/1'))
+SSh connecting to  2001:1:1:1:0:0002:0000:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0001:0001:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p2l0-32001-h1p1l1-42001 &"  1606723325 h0p2l0
+Finished executing client commands on h0p2l0
+Host(hostName='h1p2l0', basic=BasicElement(name='h1p2l0', ips=['2001:1:1:1:0:0002:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:00:01', location='p2l0/2'))
+SSh connecting to  2001:1:1:1:0:0002:0000:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0001:0001:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p2l0-32001-h0p1l1-42001 &"  1606723325 h1p2l0
+Finished executing client commands on h1p2l0
+Host(hostName='h0p2l1', basic=BasicElement(name='h0p2l1', ips=['2001:1:1:1:0:0002:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:01:00', location='p2l1/1'))
+SSh connecting to  2001:1:1:1:0:0002:0001:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0001:0000:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p2l1-32001-h1p1l0-42001 &"  1606723325 h0p2l1
+Finished executing client commands on h0p2l1
+Host(hostName='h1p2l1', basic=BasicElement(name='h1p2l1', ips=['2001:1:1:1:0:0002:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:02:01:01', location='p2l1/2'))
+SSh connecting to  2001:1:1:1:0:0002:0001:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0001:0000:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p2l1-32001-h0p1l0-42001 &"  1606723325 h1p2l1
+Finished executing client commands on h1p2l1
+Host(hostName='h0p3l0', basic=BasicElement(name='h0p3l0', ips=['2001:1:1:1:0:0003:0000:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:00:00', location='p3l0/1'))
+SSh connecting to  2001:1:1:1:0:0003:0000:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0002:0001:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p3l0-32001-h1p2l1-42001 &"  1606723325 h0p3l0
+Finished executing client commands on h0p3l0
+Host(hostName='h1p3l0', basic=BasicElement(name='h1p3l0', ips=['2001:1:1:1:0:0003:0000:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:00:01', location='p3l0/2'))
+SSh connecting to  2001:1:1:1:0:0003:0000:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0002:0001:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p3l0-32001-h0p2l1-42001 &"  1606723325 h1p3l0
+Finished executing client commands on h1p3l0
+Host(hostName='h0p3l1', basic=BasicElement(name='h0p3l1', ips=['2001:1:1:1:0:0003:0001:0000']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:01:00', location='p3l1/1'))
+SSh connecting to  2001:1:1:1:0:0003:0001:0000
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0002:0000:0001 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h0p3l1-32001-h1p2l0-42001 &"  1606723325 h0p3l1
+Finished executing client commands on h0p3l1
+Host(hostName='h1p3l1', basic=BasicElement(name='h1p3l1', ips=['2001:1:1:1:0:0003:0001:0001']), fabric_host_config=FabricHostConfig(mac='00:00:aa:03:01:01', location='p3l1/2'))
+SSh connecting to  2001:1:1:1:0:0003:0001:0001
+Printing all client commands
+python3 ./testAndMeasurement/HostFlowStarter.py " iperf3 --client 2001:1:1:1:0:0002:0000:0000 --port 42001 --cport 32001 --connect-timeout 9999  -l 1400    --set-mss 1400 -w 48K -n 256K -b 16K -S 0x08 -C dctcp  -C dctcp   --json --logfile /home/deba/Desktop/P4TE/testAndMeasurement/TEST_RESULTS/cp-assisted-with-rc/LinkUtilizationChecker/LinkUtilizationCheckerForLargeFlowStridePattern.json/client-logs/h1p3l1-32001-h0p2l0-42001 &"  1606723325 h1p3l1
+Finished executing client commands on h1p3l1

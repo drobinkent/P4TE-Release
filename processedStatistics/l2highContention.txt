@@ -1,0 +1,52 @@
+Parameters to result processor are: ['ResultProcessorExecutor.py', 'testAndMeasurement/TEST_RESULTS/mergedResults/ecmp/l2highContention', 'testAndMeasurement/TEST_RESULTS/mergedResults/P4TE/l2highContention', 'ECMP', 'P4TE', './log/']
+Starting Result Processor with config file  ./MininetSimulator/Build/Internalnetcfg.json
+
+
+====================================================================================
+FCT of short flows 
+For :ECMP
+
+Standard Deviation: 23.39401049986944
+Average: 77.43300725625
+For :P4TE
+
+Standard Deviation: 25.595177682982207
+Average: 67.74930986249998
+P4TE's gain in SD of # FCT is -9.409105732961223
+P4TE's gain in avg of FCT is 12.505903795914358
+FCT of large flows 
+For :ECMP
+
+Standard Deviation: 19.331338389843374
+Average: 158.50849284999998
+For :P4TE
+
+Standard Deviation: 12.28511421484615
+Average: 163.36603375
+P4TE's gain in SD of FCT is 36.4497482424667
+P4TE's gain in Avg of FCT is -3.0645303684748475
+
+
+====================================================================================
+Total Number of retranmits of short flows 
+For :ECMP
+
+Standard Deviation: 2.0632195714465293
+Avg: 5.575
+For :P4TE
+
+Standard Deviation: 2.717276899765646
+Avg: 8.0625
+P4TE's gain in SD of  # of retransmission is -31.700810586076166
+P4TE's gain in Avg of  # of retransmission is -44.618834080717484
+Total Number of retranmits  of large flows 
+For :ECMP
+
+Standard Deviation: 9.578491530507296
+Avg: 18.95
+For :P4TE
+
+Standard Deviation: 7.105455650413983
+Avg: 20.25
+P4TE's gain in SD of  # of retransmission is 25.818636183127015
+P4TE's gain in Avg of  # of retransmission is -6.86015831134565

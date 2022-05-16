@@ -1,0 +1,24 @@
+digraph EgressPipeImpl {
+subgraph cluster {
+graph [
+label="", labeljust=r, style=bold];
+0[label=__START__, margin="", shape=rectangle, style=solid];
+1[label=__EXIT__, margin="", shape=rectangle, style=solid];
+2[label="standard_metadata.egress_port == 255;", margin="", shape=rectangle, style=solid];
+3[label="hdr.packet_in.setValid();
+hdr.packet_in.ingress_port = standard_metadata.ingress_port;", margin="", shape=rectangle, style=solid];
+4[label="local_metadata.is_multicast && standard_metadata.ingress_port == standard_metadata.egress_port;", margin="", shape=rectangle, style=solid];
+5[label="mark_to_drop(standard_metadata);", margin="", shape=rectangle, style=solid];
+6[label="EgressPipeImpl.debug_std_meta_egress_start.dbg_table", margin="", shape=ellipse, style=solid];
+7[label="egressPortCounter.count((bit<32>)standard_metadata.egress_port);", margin="", shape=rectangle, style=solid];
+0 -> 2[label=""];
+2 -> 3[label=TRUE];
+2 -> 4[label=FALSE];
+3 -> 1[label=""];
+4 -> 5[label=TRUE];
+4 -> 6[label=FALSE];
+5 -> 6[label=""];
+6 -> 7[label=""];
+7 -> 1[label=""];
+}
+}
