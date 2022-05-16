@@ -103,8 +103,8 @@ class DataplnaeAlgorithm(Enum):
     DP_ALGO_BASIC_ECMP = "ecmp"
     DP_ALGO_CP_ASSISTED_POLICY_ROUTING = "DP_ALGO_CP_ASSISTED_POLICY_ROUTING"
 
-ALGORITHM_IN_USE = DataplnaeAlgorithm.DP_ALGO_BASIC_ECMP
-# ALGORITHM_IN_USE = DataplnaeAlgorithm.DP_ALGO_CP_ASSISTED_POLICY_ROUTING
+# ALGORITHM_IN_USE = DataplnaeAlgorithm.DP_ALGO_BASIC_ECMP
+ALGORITHM_IN_USE = DataplnaeAlgorithm.DP_ALGO_CP_ASSISTED_POLICY_ROUTING
 
 queueRateForHostFacingPortsOfLeafSwitch = 40
 queueRateForSpineFacingPortsOfLeafSwitch = 20

@@ -121,9 +121,9 @@ tables {
 }
 tables {
   preamble {
-    id: 36992381
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.upstream_routing_table"
-    alias: "upstream_routing_table"
+    id: 35966780
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_queue_depth_based_upstream_path_table"
+    alias: "egr_queue_depth_based_upstream_path_table"
   }
   match_fields {
     id: 1
@@ -131,16 +131,60 @@ tables {
     bitwidth: 128
     match_type: LPM
   }
-  action_refs {
-    id: 30149272
+  match_fields {
+    id: 2
+    name: "local_metadata.egr_queue_depth_value_range"
+    bitwidth: 10
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "local_metadata.minimum_group_members_requirement"
+    bitwidth: 10
+    match_type: RANGE
   }
   action_refs {
-    id: 21257015
-    annotations: "@defaultonly"
-    scope: DEFAULT_ONLY
+    id: 21352244
   }
-  implementation_id: 295678503
-  direct_resource_ids: 321186985
+  action_refs {
+    id: 26909416
+  }
+  implementation_id: 297284887
+  direct_resource_ids: 323523595
+  size: 1024
+}
+tables {
+  preamble {
+    id: 44624230
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_port_rate_based_upstream_path_table"
+    alias: "egr_port_rate_based_upstream_path_table"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv6.dst_addr"
+    bitwidth: 128
+    match_type: LPM
+  }
+  match_fields {
+    id: 2
+    name: "local_metadata.egr_port_rate_value_range"
+    bitwidth: 10
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "local_metadata.minimum_group_members_requirement"
+    bitwidth: 10
+    match_type: RANGE
+  }
+  action_refs {
+    id: 17159195
+  }
+  action_refs {
+    id: 21694588
+  }
+  implementation_id: 287767970
+  direct_resource_ids: 327341870
   size: 1024
 }
 tables {
@@ -258,28 +302,75 @@ actions {
 }
 actions {
   preamble {
-    id: 24470521
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.lookup_flowlet_map"
-    alias: "lookup_flowlet_map"
+    id: 21352244
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_queue_depth_based_upstream_path_selector_action_without_param"
+    alias: "egr_queue_depth_based_upstream_path_selector_action_without_param"
   }
 }
 actions {
   preamble {
-    id: 33537169
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.update_flowlet_id"
-    alias: "update_flowlet_id"
-  }
-}
-actions {
-  preamble {
-    id: 30149272
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.set_upstream_egress_port"
-    alias: "set_upstream_egress_port"
+    id: 26909416
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_queue_depth_based_upstream_path_selector_action_with_param"
+    alias: "egr_queue_depth_based_upstream_path_selector_action_with_param"
   }
   params {
     id: 1
     name: "port_num"
     bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 17159195
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_port_rate_based_upstream_path_selector_action_without_param"
+    alias: "egr_port_rate_based_upstream_path_selector_action_without_param"
+  }
+}
+actions {
+  preamble {
+    id: 21694588
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_port_rate_based_upstream_path_selector_action_with_param"
+    alias: "egr_port_rate_based_upstream_path_selector_action_with_param"
+  }
+  params {
+    id: 1
+    name: "port_num"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 21006397
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.lookup_flowlet_id_map"
+    alias: "lookup_flowlet_id_map"
+  }
+}
+actions {
+  preamble {
+    id: 20893570
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.update_flowlet_id"
+    alias: "update_flowlet_id"
+  }
+}
+actions {
+  preamble {
+    id: 21612729
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.use_old_port"
+    alias: "use_old_port"
+  }
+}
+actions {
+  preamble {
+    id: 20123105
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.use_low_egress_queue_depth_port"
+    alias: "use_low_egress_queue_depth_port"
+  }
+}
+actions {
+  preamble {
+    id: 27391972
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.use_low_egress_queue_rate_port"
+    alias: "use_low_egress_queue_rate_port"
   }
 }
 actions {
@@ -298,6 +389,34 @@ actions {
 }
 actions {
   preamble {
+    id: 20672791
+    name: "EgressPipeImpl.build_p2p_feedback_with_fake_ack"
+    alias: "build_p2p_feedback_with_fake_ack"
+  }
+}
+actions {
+  preamble {
+    id: 21373656
+    name: "EgressPipeImpl.build_p2p_feedback_with_fake_ack_for_increase"
+    alias: "build_p2p_feedback_with_fake_ack_for_increase"
+  }
+}
+actions {
+  preamble {
+    id: 17475628
+    name: "EgressPipeImpl.build_fake_ack_only"
+    alias: "build_fake_ack_only"
+  }
+}
+actions {
+  preamble {
+    id: 22131695
+    name: "EgressPipeImpl.build_fake_ack_only_for_increase"
+    alias: "build_fake_ack_only_for_increase"
+  }
+}
+actions {
+  preamble {
     id: 28949872
     name: "EgressPipeImpl.egress_rate_monitor_control_block.monitor_outgoing_flow"
     alias: "monitor_outgoing_flow"
@@ -305,11 +424,21 @@ actions {
 }
 action_profiles {
   preamble {
-    id: 295678503
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.upstream_path_selector"
-    alias: "upstream_path_selector"
+    id: 297284887
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_queue_depth_based_upstream_path_selector"
+    alias: "egr_queue_depth_based_upstream_path_selector"
   }
-  table_ids: 36992381
+  table_ids: 35966780
+  with_selector: true
+  size: 128
+}
+action_profiles {
+  preamble {
+    id: 287767970
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_routing_control_block.egr_port_rate_based_upstream_path_selector"
+    alias: "egr_port_rate_based_upstream_path_selector"
+  }
+  table_ids: 44624230
   with_selector: true
   size: 128
 }
@@ -403,14 +532,25 @@ direct_counters {
 }
 direct_counters {
   preamble {
-    id: 321186985
-    name: "upstream_routing_table_counter"
-    alias: "upstream_routing_table_counter"
+    id: 323523595
+    name: "egr_queue_depth_based_upstream_path_table_counter"
+    alias: "egr_queue_depth_based_upstream_path_table_counter"
   }
   spec {
     unit: BOTH
   }
-  direct_table_id: 36992381
+  direct_table_id: 35966780
+}
+direct_counters {
+  preamble {
+    id: 327341870
+    name: "egr_port_rate_based_upstream_path_table_counter"
+    alias: "egr_port_rate_based_upstream_path_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 44624230
 }
 meters {
   preamble {
@@ -680,9 +820,9 @@ registers {
 }
 registers {
   preamble {
-    id: 370808593
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.ecmp_flowlet_id_map"
-    alias: "ecmp_flowlet_id_map"
+    id: 382694746
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.flowlet_id_map"
+    alias: "flowlet_id_map"
   }
   type_spec {
     bitstring {
@@ -695,14 +835,29 @@ registers {
 }
 registers {
   preamble {
-    id: 383017684
-    name: "IngressPipeImpl.upstream_ecmp_routing_control_block.ecmp_flowlet_lasttime_map"
-    alias: "ecmp_flowlet_lasttime_map"
+    id: 373780740
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.flowlet_lasttime_map"
+    alias: "flowlet_lasttime_map"
   }
   type_spec {
     bitstring {
       bit {
         bitwidth: 48
+      }
+    }
+  }
+  size: 8192
+}
+registers {
+  preamble {
+    id: 373094805
+    name: "IngressPipeImpl.cp_assisted_multicriteria_upstream_policy_routing_control_block.flowlet_last_used_port"
+    alias: "flowlet_last_used_port"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 9
       }
     }
   }
@@ -722,6 +877,21 @@ registers {
     }
   }
   size: 256
+}
+registers {
+  preamble {
+    id: 380592011
+    name: "EgressPipeImpl.leaf_rate_control_processor_control_block.flowlet_id_to_seq_number_of_last_rate_control_action_map"
+    alias: "flowlet_id_to_seq_number_of_last_rate_control_action_map"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 8192
 }
 type_info {
 }
